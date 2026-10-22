@@ -1,0 +1,36 @@
+name: cross-platform-tests
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.9", "3.13"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Regression suite (31 cases)
+        run: python -I -S tests/run_tests.py
+
+      - name: Smoke test on generated vaults
+        run: |
+          python -I -S tests/gen_big_vault.py ci-vault --gt ci-vault-gt.json
+          python -I -S src/engine/scripts/scan.py ci-vault -o ci-index.json
+          python -I -S src/engine/scripts/dup.py ci-index.json
+          python -I -S src/engine/scripts/health.py ci-index.json
+          python -I -S src/engine/scripts/vault.py --no-count || true
+
+      - name: Planner smoke test
+        run: |
+          python -I -S src/engine/scripts/dup.py ci-index.json --json ci-dup.json
+          python -I -S src/restructure-planner/scripts/plan.py ci-index.json --dup ci-dup.json

@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-22T19:42:52.190836",
+  "vault_root": "/Users/isc/test-vault",
+  "stats": {
+    "total_notes": 6,
+    "total_attachments": 1,
+    "total_canvas": 1,
+    "total_dirs": 2,
+    "broken_links": 0,
+    "orphan_notes": 0,
+    "missing_frontmatter": 2,
+    "duplicate_groups": 0
+  },
+  "files": [
+    {
+      "path": "Ref.md",
+      "type": "note",
+      "size": 177,
+      "mtime": 1792669282,
+      "content_hash": "b871f8833fcd0c9a025f6f960bb828d71288a48fef0c94baa1f46ce9f4adb6e7",
+      "frontmatter": {
+        "tags": "引用"
+      },
+      "title_normalized": "ref"
+    },
+    {
+      "path": "草稿 文件.md",
+      "type": "note",
+      "size": 45,
+      "mtime": 1792669282,
+      "content_hash": "2146bc21712f1645b01e2a5886c6736ce599b05be341a79a16d775cab25b91fe",
+      "frontmatter": {
+        "title": "草稿"
+      },
+      "title_normalized": "草稿"
+    },
+    {
+      "path": ".DS_Store",
+      "type": "other",
+      "size": 6148,
+      "mtime": 1792669282
+    },
+    {
+      "path": "Note.md",
+      "type": "note",
+      "size": 108,
+      "mtime": 1792669282,
+      "content_hash": "70ae6c3e11f79317837b6e3697178b241c1cc2af0fb1130fd0f08d6f7cf65b17",
+      "frontmatter": {
+        "title": "Note",
+        "tags": [
+          "笔记",
+          "测试"
+        ]
+      },
+      "title_normalized": "note"
+    },
+    {
+      "path": "img.png",
+      "type": "attachment",
+      "size": 8,
+      "mtime": 1792669270,
+      "content_hash": "4c4b6a3be1314ab86138bef4314dde022e600960d8689a2c8f8631802d20dab6"
+    },
+    {
+      "path": "Embed.md",
+      "type": "note",
+      "size": 26,
+      "mtime": 1792669282,
+      "content_hash": "b37d05dfecd9a796419cc6a6eed5f23cdd7c9f8163136bc57ce6715f437284e9",
+      "frontmatter": null,
+      "title_normalized": "embed"
+    },
+    {
+      "path": "Code.md",
+      "type": "note",
+      "size": 117,
+      "mtime": 1792669282,
+      "content_hash": "957c31d3dfbea9cc97e2e00415b0d7da1645e8b0cdbbad754fa41541431d6155",
+      "frontmatter": null,
+      "title_normalized": "code"
+    },
+    {
+      "path": "Board.canvas",
+      "type": "canvas",
+      "size": 57,
+      "mtime": 1792669270,
+      "content_hash": "f6dd5a2b8f2a49d54d7fb441fcfc70e75290aa0dac109f29fd524e09845dd1af"
+    },
+    {
+      "path": "Sub/Note.md",
+      "type": "note",
+      "size": 55,
+      "mtime": 1792669282,
+      "content_hash": "482236afa2b1193eb1c081d2e3c13119d216ed7509e7e23d1fc83d3718ddc6d9",
+      "frontmatter": {
+        "title": "Sub Note"
+      },
+      "title_normalized": "subnote"
+    }
+  ],
+  "links": [
+    {
+      "from": "Ref.md",
+      "to": "Note",
+      "kind": "wikilink",
+      "raw": "[[Note]]",
+      "resolved": "Note.md",
+      "ambiguous": true
+    },
+    {
+      "from": "Ref.md",
+      "to": "Note",
+      "kind": "alias",
+      "raw": "[[Note|我的笔记]]",
+      "resolved": "Note.md",
+      "ambiguous": true
+    },
+    {
+      "from": "Ref.md",
+      "to": "Note",
+      "kind": "heading",
+      "raw": "[[Note#一 概述]]",
+      "resolved": "Note.md",
+      "ambiguous": true
+    },
+    {
+      "from": "Ref.md",
+      "to": "Note",
+      "kind": "block",
+      "raw": "[[Note#^abc123]]",
+      "resolved": "Note.md",
+      "ambiguous": true
+    },
+    {
+      "from": "Ref.md",
+      "to": "不存在",
+      "kind": "wikilink",
+      "raw": "[[不存在]]",
+      "resolved": null,
+      "ambiguous": false
+    },
+    {
+      "from": "Embed.md",
+      "to": "img.png",
+      "kind": "embed",
+      "raw": "![[img.png]]",
+      "resolved": "img.png",
+      "ambiguous": false
+    },
+    {
+      "from": "Code.md",
+      "to": "Note",
+      "kind": "wikilink",
+      "raw": "[[Note]]",
+      "resolved": "Note.md",
+      "ambiguous": true
+    }
+  ],
+  "attachments": [
+    {
+      "path": "img.png",
+      "referenced_by": [
+        "Embed.md"
+      ]
+    }
+  ],
+  "duplicates": []
+}

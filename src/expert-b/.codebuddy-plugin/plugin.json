@@ -1,0 +1,61 @@
+{
+  "name": "obsidian-vault-doctor",
+  "version": "1.0.0",
+  "description": "Obsidian vault diagnosis and restructure expert: read-only health check, broken-link/orphan/duplicate detection, prioritized A/B/C action plan, safe file moves with automatic link rewriting and one-command rollback. Runs entirely on the user's machine with zero dependencies.",
+  "author": {
+    "name": "isc",
+    "email": "alipaonay@agent.qq.com"
+  },
+  "agents": [
+    "./agents/obsidian-vault-doctor.md"
+  ],
+  "expertType": "agent",
+  "agentName": "obsidian-vault-doctor",
+  "displayName": {
+    "en": "Obsidian Vault Doctor",
+    "zh": "Obsidian 笔记库医生"
+  },
+  "profession": {
+    "en": "Obsidian Vault Restructure Specialist",
+    "zh": "Obsidian 笔记库治理专家"
+  },
+  "displayDescription": {
+    "zh": "体检你的 Obsidian 笔记库，分清真问题与正常现象，给出健康分和分级整理清单，每步可回滚。",
+    "en": "Health-check your Obsidian vault, tell real issues from noise, and give a graded plan with one-command rollback."
+  },
+  "avatar": "avatars/expert.jpg",
+  "categoryId": "09-OperationsHR",
+  "defaultInitPrompt": {
+    "zh": "帮我体检这个 Obsidian 笔记库，告诉我先修什么",
+    "en": "Check my Obsidian vault and tell me what to fix first"
+  },
+  "plugin": "obsidian-vault-doctor",
+  "tags": [
+    {
+      "en": "Vault Health Check",
+      "zh": "笔记库体检"
+    },
+    {
+      "en": "Broken Link Repair",
+      "zh": "断链修复"
+    },
+    {
+      "en": "Safe Restructure",
+      "zh": "安全重组"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Check my Obsidian vault and tell me what to fix first",
+      "zh": "帮我体检这个 Obsidian 笔记库，告诉我先修什么"
+    },
+    {
+      "en": "My vault has grown to hundreds of notes and I can't find anything. Where do I start?",
+      "zh": "我的笔记库几百篇了，找不到东西，该从哪下手"
+    },
+    {
+      "en": "Reorganize a folder and update all wikilinks automatically, with a way to undo",
+      "zh": "帮我整理一个目录并自动更新全库链接，要能反悔"
+    }
+  ]
+}
