@@ -27,6 +27,15 @@ import sys
 import tempfile
 from pathlib import Path
 
+# Windows 控制台默认 cp1252/GBK，打印 ✅❌ 等字符会 UnicodeEncodeError。
+# 强制 stdout/stderr 走 UTF-8（Python 3.7+；缺失时静默跳过）。
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
 SCRIPTS = Path(__file__).resolve().parent.parent / "src" / "engine" / "scripts"
 PY = sys.executable
 

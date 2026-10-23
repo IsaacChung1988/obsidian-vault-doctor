@@ -12,6 +12,8 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         python-version: ["3.9", "3.13"]
     runs-on: ${{ matrix.os }}
+    env:
+      PYTHONUTF8: "1"   # Windows runner 默认 cp1252，中文/emoji 输出会崩
     steps:
       - uses: actions/checkout@v4
 
