@@ -1,11 +1,11 @@
 ---
 name: obsidian-vault-engine
-description: "Obsidian 笔记库治理引擎（本地执行、纯标准库零依赖）。扫描库结构生成 index.json 基线、诊断断链/孤儿/重复/缺元数据、安全移动与重命名（自动重写全库 wikilink、markdown 链接、Canvas 引用）并支持一条命令完整回滚。当用户需要体检 Obsidian 库、清理重复笔记、整理目录结构、修复断链、批量改名、迁移归档笔记，或问「我的笔记库乱不乱/健不健康」时使用。"
+description: "笔记越记越多、库里越来越乱？一键体检：揪出断链、孤儿笔记、重复笔记和缺失元数据，给出健康分和「先修什么」清单。整理目录、批量改名时自动更新全库链接，每一步都能一键回滚——只做安全的整理，绝不误删。说「体检我的笔记库」「清理重复笔记」「整理这个目录」就能开始。"
 version: 1.2.2
 display_name: "Obsidian 笔记库引擎"
 display_name_en: "Obsidian Vault Engine"
-description_zh: "Obsidian 笔记库治理引擎（本地执行、纯标准库零依赖）。扫描库生成基线、诊断断链/孤儿/重复/缺元数据、安全移动与改名（自动重写全库 wikilink 与 Canvas 引用）并支持一条命令完整回滚。触发词：体检笔记库、清理重复、整理目录、修复断链、批量改名、我的笔记库乱不乱。"
-description_en: "Local-only Obsidian vault governance, pure Python standard library, zero dependencies. Scan and diagnose broken links, orphans and duplicates; move and rename notes with automatic wikilink rewrite and one-command rollback."
+description_zh: "笔记越记越多、库里越来越乱？一键体检：揪出断链、孤儿笔记、重复笔记和缺失元数据，给出健康分和「先修什么」清单。整理目录、批量改名时自动更新全库链接，每一步都能一键回滚——只做安全的整理，绝不误删。说「体检我的笔记库」「清理重复笔记」「整理这个目录」就能开始。"
+description_en: "Your Obsidian vault gets messy as notes pile up. One command runs a full health check — broken links, orphans, duplicates, missing metadata — with a health score and a fix-first list. Reorganize folders or batch-rename with every link rewritten automatically, and undo it all in one command. Say check-my-vault, clean-up-duplicates or tidy-this-folder to start."
 author: "isc"
 ---
 
