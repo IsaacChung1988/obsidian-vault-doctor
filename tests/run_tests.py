@@ -63,7 +63,7 @@ def sk(reason):
 # ---------- CLI 封装 ----------
 
 def sh(cmd):
-    return subprocess.run(cmd, capture_output=True, text=True)
+    return subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
 
 
 def run_scan(sb, out):
@@ -651,7 +651,7 @@ def case_28(sb):
     assert r.returncode == 0, r.stderr
     out = art("dup.txt")
     p = subprocess.run([PY, "-I", "-S", str(SCRIPTS / "dup.py"), idx, "-o", out],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert p.returncode == 0, p.stderr
     text = Path(out).read_text(encoding="utf-8")
 
@@ -701,7 +701,7 @@ def case_29(sb):
 
     jout = art("dup.json")
     p = subprocess.run([PY, "-I", "-S", str(SCRIPTS / "dup.py"), idx, "--json", jout],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert p.returncode == 0, p.stderr
     data = json.loads(Path(jout).read_text(encoding="utf-8"))
 
@@ -753,7 +753,7 @@ def case_30(sb):
 
     jout = art("plan.json")
     p = subprocess.run([PY, "-I", "-S", str(PLANNER / "plan.py"), idx, "--json", jout],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert p.returncode == 0, p.stderr
     plan = json.loads(Path(jout).read_text(encoding="utf-8"))
 
@@ -774,7 +774,7 @@ def case_30(sb):
 
     # ④ 终端输出：编号必须连续（不能出现 A1→A3 断号）
     out = subprocess.run([PY, "-I", "-S", str(PLANNER / "plan.py"), idx],
-                         capture_output=True, text=True)
+                         capture_output=True, text=True, encoding="utf-8", errors="replace")
     text = out.stdout
     codes = [f"A{i}" for i in range(1, 10) if f"  A{i}  " in text]
     assert codes, f"终端输出里没有 A 级编号：\n{text[:400]}"

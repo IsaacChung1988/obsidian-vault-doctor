@@ -140,7 +140,7 @@ def main():
         subprocess.run([sys.executable, "-I", "-S", os.path.join(SCRIPTS, "scan.py"), vault, "-o", idx],
                        check=True, capture_output=True)
         r = subprocess.run([sys.executable, "-I", "-S", os.path.join(SCRIPTS, "dup.py"), idx],
-                           capture_output=True, text=True)
+                           capture_output=True, text=True, encoding="utf-8", errors="replace")
         print("\n--- 实际 CLI 输出（4 个文件，文件名互不相同）---")
         print(r.stdout.strip())
         print("\n注：文件名不同却仍被列为候选 —— 这是 v1.2 的修复点。")
