@@ -1,30 +1,30 @@
 {
-  "name": "obsidian-vault-doctor",
-  "version": "1.0.0",
-  "description": "Obsidian vault diagnosis and restructure expert: read-only health check, broken-link/orphan/duplicate detection, prioritized A/B/C action plan, safe file moves with automatic link rewriting and one-command rollback. Runs entirely on the user's machine with zero dependencies.",
-  "author": {
-    "name": "isc",
-    "email": "alipaonay@agent.qq.com"
-  },
-  "agents": [
-    "./agents/obsidian-vault-doctor.md"
-  ],
-  "expertType": "agent",
-  "agentName": "obsidian-vault-doctor",
-  "displayName": {
-    "en": "Obsidian Vault Doctor",
-    "zh": "Obsidian 笔记库医生"
-  },
-  "profession": {
-    "en": "Obsidian Vault Restructure Specialist",
-    "zh": "Obsidian 笔记库治理专家"
-  },
-  "displayDescription": {
+ "name": "obsidian-vault-doctor",
+ "version": "1.0.0",
+ "description": "Obsidian vault diagnosis and restructure expert: read-only health check, broken-link/orphan/duplicate detection, prioritized A/B/C action plan, safe file moves with automatic link rewriting and one-command rollback. Runs entirely on the user's machine with zero dependencies.",
+ "author": {
+  "name": "isc",
+  "email": "alipaonay@agent.qq.com"
+ },
+ "agents": [
+  "./agents/obsidian-vault-doctor.md"
+ ],
+ "expertType": "agent",
+ "agentName": "obsidian-vault-doctor",
+ "displayName": {
+  "en": "Obsidian Vault Administrator",
+  "zh": "Obsidian 知识库管理员"
+ },
+ "profession": {
+  "en": "Obsidian Vault Restructure Specialist",
+  "zh": "Obsidian 笔记库治理专家"
+ },
+ "displayDescription": {
   "zh": "Obsidian 库诊断与管理：扫描库结构，甄别真问题与正常现象，输出健康分与分级清单，全程可回滚。",
   "en": "Diagnose and manage your Obsidian vault: structural scans, real-issue detection, health score, graded plan, fully reversible."
  },
-  "avatar": "avatars/expert.jpg",
-  "categoryId": "04-DataAI",
+ "avatar": "avatars/expert.jpg",
+ "categoryId": "04-DataAI",
  "defaultInitPrompt": {
   "zh": "给我的 Obsidian 笔记库做个体检，看看有什么不健康的地方",
   "en": "Run a full diagnostic on my Obsidian vault and flag anything unhealthy"

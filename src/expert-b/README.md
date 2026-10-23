@@ -1,4 +1,4 @@
-# Obsidian 笔记库医生（Obsidian Vault Doctor）
+# Obsidian 知识库管理员（Obsidian Vault Administrator）
 
 面向**已经有库、想把库治好**的 Obsidian 用户：只读体检 → 分级行动方案 → 安全整理 → 可一键回滚。
 
