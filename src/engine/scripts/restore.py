@@ -14,6 +14,7 @@ import os
 import shutil
 import subprocess
 import sys
+import tempfile
 import zipfile
 
 # 保证脚本目录在 sys.path（应对 -I/-P/非标准调用，分发后必需）
@@ -67,7 +68,8 @@ def main():
 
     # 3. verify 对比（可选）
     if args.index_before:
-        after_path = "/tmp/index-after-restore.json"
+        # 不能写死 /tmp：Windows 没有该目录（跨平台 CI 实测暴露的 bug）
+        after_path = os.path.join(tempfile.gettempdir(), "index-after-restore.json")
         subprocess.run(
             [sys.executable, os.path.join(os.path.dirname(__file__), "scan.py"),
              vault, "-o", after_path],
