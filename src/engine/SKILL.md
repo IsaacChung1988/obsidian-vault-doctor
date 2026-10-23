@@ -1,6 +1,6 @@
 ---
 name: obsidian-vault-engine
-description: Obsidian 笔记库治理引擎（本地执行、纯标准库零依赖）。扫描库结构生成 index.json 基线、诊断断链/孤儿/重复/缺元数据、安全移动与重命名（自动重写全库 wikilink、markdown 链接、Canvas 引用）并支持一条命令完整回滚。当用户需要体检 Obsidian 库、清理重复笔记、整理目录结构、修复断链、批量改名、迁移归档笔记，或问"我的笔记库乱不乱/健不健康"时使用。
+description: "Obsidian 笔记库治理引擎（本地执行、纯标准库零依赖）。扫描库结构生成 index.json 基线、诊断断链/孤儿/重复/缺元数据、安全移动与重命名（自动重写全库 wikilink、markdown 链接、Canvas 引用）并支持一条命令完整回滚。当用户需要体检 Obsidian 库、清理重复笔记、整理目录结构、修复断链、批量改名、迁移归档笔记，或问「我的笔记库乱不乱/健不健康」时使用。"
 version: 1.2.2
 display_name: "Obsidian 笔记库引擎"
 display_name_en: "Obsidian Vault Engine"
