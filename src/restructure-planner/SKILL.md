@@ -1,11 +1,11 @@
 ---
 name: obsidian-restructure-planner
-description: "Obsidian 库治理计划器（本地执行、纯标准库零依赖）。读引擎产出的 index.json，把体检出的散点问题排成 A（立刻能修）/ B（要你判断）/ C（不要动）三级行动清单，给出执行顺序、风险等级、以及做完每级能到多少分。当用户问「我的库该怎么整理」「从哪下手」「先做哪一步」，或库已经超过 100 篇、明显混乱但不知道如何处理时使用。"
+description: "Obsidian 笔记库治理计划器：读取诊断索引，将库内问题分级为 A（可直接修复）/ B（需人工决策）/ C（无需处理），输出执行顺序、风险等级与各阶段健康度预估，辅助制定整理计划。只读设计，不修改任何文件。适用：「我的库该怎么整理」「从哪下手」。"
 version: 1.0.1
 display_name: "Obsidian 治库计划器"
 display_name_en: "Obsidian Restructure Planner"
-description_zh: "Obsidian 库治理计划器（本地执行、只读）。把体检结果排成 A（立刻能修）/B（要你判断）/C（不要动）三级行动清单，给出执行顺序、风险等级与健康分模拟。触发词：笔记库怎么整理、从哪下手、先做哪一步、库太乱。"
-description_en: "Read-only decision layer for Obsidian vault cleanup. Turns scan results into an A/B/C action plan with a transparent health score, so you always know what to fix first. Pure Python standard library, zero dependencies."
+description_zh: "Obsidian 笔记库治理计划器：读取诊断索引，将库内问题分级为 A（可直接修复）/ B（需人工决策）/ C（无需处理），输出执行顺序、风险等级与各阶段健康度预估。只读设计，不修改任何文件。适用：「我的库该怎么整理」「从哪下手」。"
+description_en: "Read-only planner for Obsidian vault governance — reads the diagnostic index, classifies issues into A (fix directly) / B (needs your decision) / C (leave alone), and outputs execution order, risk levels and projected health scores per stage. Modifies nothing."
 author: "isc"
 ---
 

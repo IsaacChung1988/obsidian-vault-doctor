@@ -1,11 +1,11 @@
 ---
 name: obsidian-vault-engine
-description: "笔记越记越多、库里越来越乱？一键体检：揪出断链、孤儿笔记、重复笔记和缺失元数据，给出健康分和「先修什么」清单。整理目录、批量改名时自动更新全库链接，每一步都能一键回滚——只做安全的整理，绝不误删。说「体检我的笔记库」「清理重复笔记」「整理这个目录」就能开始。"
+description: "Obsidian 笔记库诊断引擎：扫描库结构生成索引基线，检测断链、孤儿笔记、重复内容与缺失元数据，输出健康度评分与分级修复清单；目录重组与批量改名时自动重写全库链接，所有操作可一键回滚。适用：「体检我的笔记库」「清理重复笔记」「整理目录」。"
 version: 1.2.2
 display_name: "Obsidian 笔记库引擎"
 display_name_en: "Obsidian Vault Engine"
-description_zh: "笔记越记越多、库里越来越乱？一键体检：揪出断链、孤儿笔记、重复笔记和缺失元数据，给出健康分和「先修什么」清单。整理目录、批量改名时自动更新全库链接，每一步都能一键回滚——只做安全的整理，绝不误删。说「体检我的笔记库」「清理重复笔记」「整理这个目录」就能开始。"
-description_en: "Your Obsidian vault gets messy as notes pile up. One command runs a full health check — broken links, orphans, duplicates, missing metadata — with a health score and a fix-first list. Reorganize folders or batch-rename with every link rewritten automatically, and undo it all in one command. Say check-my-vault, clean-up-duplicates or tidy-this-folder to start."
+description_zh: "Obsidian 笔记库诊断引擎：扫描库结构生成索引基线，检测断链、孤儿笔记、重复内容与缺失元数据，输出健康度评分与分级修复清单；目录重组与批量改名时自动重写全库链接，所有操作可一键回滚。适用：「体检我的笔记库」「清理重复笔记」「整理目录」。"
+description_en: "Local-first diagnostic engine for Obsidian vaults — scans the vault into an indexed baseline, detects broken links, orphan notes, duplicate content and missing metadata, and produces a health score with a prioritized fix list. Folder reorganizations and batch renames rewrite all references automatically; every operation is reversible in one command."
 author: "isc"
 ---
 
