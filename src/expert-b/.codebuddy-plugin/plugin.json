@@ -24,7 +24,7 @@
     "en": "Health-check your Obsidian vault, tell real issues from noise, and give a graded plan with one-command rollback."
   },
   "avatar": "avatars/expert.jpg",
-  "categoryId": "09-OperationsHR",
+  "categoryId": "04-DataAI",
   "defaultInitPrompt": {
     "zh": "帮我体检这个 Obsidian 笔记库，告诉我先修什么",
     "en": "Check my Obsidian vault and tell me what to fix first"
